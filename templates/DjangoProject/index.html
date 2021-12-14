@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>主選單</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/index_style.css' %}">
+    </head>
+        <div>
+            <h1>歡迎使用角色系統</h1>
+            <input type="button" value="登記角色" onclick="location.href='{% url 'member:register' %}'">
+            <input type="button" value="刪除角色" onclick="location.href='{% url 'member:delete' %}'">
+            <input type="button" value="設定" onclick="location.href='{% url 'member:setting' %}'">
+        </div>
+
+    </body>
+</html>
